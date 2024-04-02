@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paradiset på Flora|Kontakt</title>
+    <meta
+      name="description"
+      content="Frågor eller funderingar? Använd formuläret på denna sida för att kontakta oss på Paradiset på Flora."
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <nav>
+      <a href="index.html">
+        <img src="Images/logo.png" alt="Till startsidan." id="logo" />
+        <!--Src logo "https://stablecog.com/generate" AI-generated based on
+      personally selected requirements. -->
+      </a>
+      <ul>
+        <li><a href="index.html" class="link">HEM</a></li>
+        <li><a href="garden.html" class="link">TRÄDGÅRDEN</a></li>
+        <li><a href="projekt.html" class="link">PROJEKT</a></li>
+        <li><a href="kontakt.html" class="link">KONTAKT</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1 class="topline">KONTAKTA OSS</h1>
+      <p>
+        Är det något du undrar över? Är du nyfiken och vill veta mer? Tveka inte
+        att fråga oss! Lättast når du oss via formuläret nedan.
+      </p>
+      <form action="#" method="POST" id="formflex">
+        <!-- no target for the form due to knowledge of creating such is not a part of this course -->
+        <label for="name">Namn:</label>
+        <input id="name" name="name" placeholder="Namn" type="text" size="40" />
+        <label for="email">E-post:</label>
+        <input
+          id="email"
+          name="email"
+          placeholder="E-post"
+          type="text"
+          size="40"
+        />
+        <label for="message">Skriv din fråga här:</label>
+        <textarea
+          id="message"
+          cols="40"
+          name="message"
+          placeholder="Meddelande"
+          rows="6"
+        ></textarea>
+        <input type="submit" value="Skicka" id="send" />
+      </form>
+    </main>
+    <footer>©ParadisetpåFlora</footer>
+  </body>
+</html>

@@ -1,0 +1,273 @@
+@font-face {
+  font-family: MontserratAlternates;
+  src: url(SourceCodePro-VariableFont_wght.ttf);
+}
+/* Font downloaded from fonts.google.com */
+/* --------------------------navbar-------------------------- */
+nav {
+  grid-area: nav;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  background-color: #fafcdf;
+}
+#logo {
+  height: 100px;
+  width: auto;
+}
+nav ul {
+  line-height: 1.65rem;
+  list-style: none;
+}
+nav ul a {
+  font-weight: bold;
+}
+/* --------------------------general css-------------------------- */
+body {
+  display: grid;
+  grid-template-areas:
+    "nav"
+    "main"
+    "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 137px auto 5%;
+  align-items: baseline;
+  margin: 0;
+  font-family: MontserratAlternates, "Times New Roman", Times, serif;
+  background-color: #fafcdf;
+}
+main {
+  grid-area: main;
+  text-align: center;
+  padding-bottom: 5%;
+  /* padding-bottom added due to styling issues caused by lack of javascrip knowledge.*/
+}
+img {
+  border-radius: 3%;
+  width: 100%;
+}
+.topline {
+  font-size: 1.5rem;
+  position: sticky;
+  top: 137px;
+  padding: 10px 20px;
+  margin: 0;
+  margin-bottom: 10px;
+  background-color: #dbe6bb;
+}
+.link {
+  color: black;
+  text-decoration: none;
+}
+.linkbutton {
+  font-size: 1.2rem;
+  background-color: #dbe6bb;
+  width: fit-content;
+  margin: auto;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border: 1px solid #70a35c;
+  border-radius: 10%;
+}
+.linkbutton:hover {
+  text-decoration: underline;
+}
+.divider-line {
+  border-bottom: 1px solid #70a35c;
+  margin: 0 10%;
+}
+/* ------------------------------footer------------------------------ */
+footer {
+  grid-area: footer;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: #fafcdf;
+  text-align: center;
+}
+/* ----------------------------index.html---------------------------- */
+#flora {
+  max-width: 700px;
+  height: auto;
+  border-radius: 50%;
+  box-sizing: border-box;
+  padding: 0px 20px;
+}
+/* ----------------------------garden.html---------------------------- */
+.flex-garden {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2%;
+}
+.flex-garden .garden-circle {
+  order: 1;
+}
+.flex-garden .span-desc {
+  order: 2;
+}
+.flex-garden .text-garden {
+  order: 3;
+}
+.flex-garden .link {
+  order: 4;
+}
+.garden-circle {
+  width: 15vmax;
+  height: 15vmax;
+  border: 1px double #70a35c;
+  border-radius: 50%;
+  padding: 3px;
+  margin-top: 10px;
+}
+.span-desc {
+  display: none;
+}
+/* ----------------------all pages about the borders---------------------- */
+.garden-img {
+  float: right;
+  padding-right: 10px;
+}
+.garden-img img {
+  max-width: 200px;
+  max-height: 200px;
+  height: auto;
+}
+.garden-img div {
+  text-align: center;
+  font-style: italic;
+}
+.garden-info {
+  text-align: left;
+}
+.info-box {
+  width: 70%;
+  margin: 10px auto;
+}
+.info-box img {
+  max-height: max-content;
+}
+.info-box ul {
+  text-align: left;
+  list-style-type: none;
+}
+.plant-name {
+  font-weight: bold;
+}
+.latin-name {
+  font-style: italic;
+}
+/* ----------------------------project.html---------------------------- */
+.project-name {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+}
+.time-project {
+  font-style: italic;
+  margin: 0;
+}
+.fact {
+  text-align: left;
+  margin-left: auto;
+}
+.fact p {
+  margin-top: 0;
+}
+/* -------------------------kontakt.html------------------------- */
+#formflex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#send {
+  margin-top: 10px;
+}
+/* --------------------------media queries-------------------------- */
+@media screen and (min-width: 660px) {
+  /* --------------------------navbar media-------------------------- */
+  nav {
+    z-index: 1;
+    justify-content: center;
+  }
+  nav ul li {
+    display: inline;
+  }
+  nav ul a {
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  nav ul a:hover {
+    text-decoration: underline;
+  }
+  /* --------------------------general css media-------------------------- */
+  body {
+    grid-template-rows: 104px auto 5%;
+    background-color: #dbe6bb;
+  }
+  main {
+    background-color: #fafcdf;
+    margin: 0 10%;
+  }
+  .topline {
+    top: 104px;
+    z-index: 1;
+  }
+  p {
+    padding: 0 40px;
+    max-width: 500px;
+    margin: auto;
+  }
+  /* -------------------all pages about the borders media------------------- */
+  .garden-img:hover {
+    opacity: 0.7;
+  }
+  .info-box img:hover {
+    opacity: 0.7;
+  }
+  .plantlist-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .info-box {
+    width: 200px;
+    margin: 5px;
+  }
+  .info-box img {
+    max-width: 150px;
+    height: auto;
+    width: auto;
+  }
+  /* --------------------------projekt.html media--------------------------- */
+  #flex-project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .fact p {
+    padding-left: 25px;
+  }
+  .project-name {
+    padding-left: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-height: 300px) and (max-height: 400px) {
+  nav ul a {
+    font-size: 1.5rem;
+  }
+  .topline {
+    position: unset;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .garden-img {
+    float: none;
+  }
+}
